@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>InstallArmoredLung</defName>
+    <label>Install Armored Lung</label>
+    <description>Now picard can fulfill his dream.</description>
+    <workerClass>Recipe_InstallImplant</workerClass>
+    <jobString>Installing Armored Lung.</jobString>
+    <workAmount>2800</workAmount>
+    <skillRequirements>
+      <Medicine>5</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CyberPunk_ArmoredLung</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>CyberPunk_ArmoredLung</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Lung</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>CyberPunk_ArmoredLung</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>InstallArmoredBrain</defName>
+    <label>Install Armored Brain</label>
+    <description>Now picard can fulfill his dream.</description>
+    <workerClass>Recipe_InstallImplant</workerClass>
+    <jobString>Installing Armored Brain.</jobString>
+    <workAmount>2800</workAmount>
+    <skillRequirements>
+      <Medicine>15</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CyberPunk_ArmoredBrain</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>CyberPunk_ArmoredBrain</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>CyberPunk_ArmoredBrain</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>InstallArmoredNose</defName>
+    <label>Install Armored Nose</label>
+    <description>Now picard can fulfill his dream.</description>
+    <workerClass>Recipe_InstallImplant</workerClass>
+    <jobString>Installing Armored Nose.</jobString>
+    <workAmount>500</workAmount>
+    <skillRequirements>
+      <Medicine>3</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CyberPunk_ArmoredNose</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>CyberPunk_ArmoredNose</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Nose</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>CyberPunk_ArmoredNose</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>InstallArmoredHeart</defName>
+    <label>Install Armored Heart</label>
+    <description>Now picard can fulfill his dream.</description>
+    <workerClass>Recipe_InstallImplant</workerClass>
+    <jobString>Installing Armored Heart.</jobString>
+    <workAmount>2800</workAmount>
+    <skillRequirements>
+      <Medicine>5</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CyberPunk_ArmoredHeart</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>CyberPunk_ArmoredHeart</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Heart</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>CyberPunk_ArmoredHeart</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>InstallArmoredEye</defName>
+    <label>Install Armored Eye</label>
+    <description>Now picard can fulfill his dream.</description>
+    <workerClass>Recipe_InstallImplant</workerClass>
+    <jobString>Installing Armored Eye.</jobString>
+    <workAmount>1250</workAmount>
+    <skillRequirements>
+      <Medicine>5</Medicine>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>CyberPunk_ArmoredEye</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>CyberPunk_ArmoredEye</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Eye</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>CyberPunk_ArmoredEye</addsHediff>
+  </RecipeDef>
+</Defs>
