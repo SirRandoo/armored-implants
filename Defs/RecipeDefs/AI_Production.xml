@@ -1,0 +1,968 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+  <!-- Base -->
+  <RecipeDef Name="AI_Fabrication" Abstract="True">
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <effectWorking>Smith</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+    <workSkill>Crafting</workSkill>
+    <workSkillLearnFactor>16</workSkillLearnFactor>
+    <requiredGiverWorkType>Crafting</requiredGiverWorkType>
+    <conceptLearned>BillsTab</conceptLearned>
+    <researchPrerequisite>Fabrication</researchPrerequisite>
+    
+    <recipeUsers>
+      <li>FabricationBench</li>
+    </recipeUsers>
+  </RecipeDef>
+
+  <RecipeDef Name="AI_FabricationTI" ParentName="AI_Fabrication" Abstract="True">
+    <researchPrerequisite>AI_SteelOrganCasings</researchPrerequisite>
+    <workAmount>3500</workAmount>
+
+    <skillRequirements>
+      <Crafting>8</Crafting>
+    </skillRequirements>
+  </RecipeDef>
+
+  <RecipeDef Name="AI_FabricationTII" ParentName="AI_Fabrication" Abstract="True">
+    <researchPrerequisite>AI_PlasteelOrganCasings</researchPrerequisite>
+    <workAmount>4500</workAmount>
+
+    <skillRequirements>
+      <Crafting>10</Crafting>
+    </skillRequirements>
+  </RecipeDef>
+
+  <RecipeDef Name="AI_FabricationBionic" ParentName="AI_Fabrication" Abstract="True">
+    <researchPrerequisite>AI_ReinforcedBionics</researchPrerequisite>
+    <workAmount>5500</workAmount>
+
+    <skillRequirements>
+      <Crafting>15</Crafting>
+    </skillRequirements>
+  </RecipeDef>
+  
+  <!-- Tier 1 Implants -->
+  <RecipeDef ParentName="AI_FabricationTI">
+    <defName>AI_MakeHeartTI</defName>
+    <label>make steel heart casing</label>
+    <description>Make a steel heart casing.</description>
+    <jobString>Making steel heart casing.</jobString>
+
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+
+    <products>
+      <AI_HeartTI>1</AI_HeartTI>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AI_FabricationTI">
+    <defName>AI_MakeLungTI</defName>
+    <label>make steel lung casing</label>
+    <description>Make a steel lung casing.</description>
+    <jobString>Making steel lung casing.</jobString>
+
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+
+    <products>
+      <AI_LungTI>1</AI_LungTI>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AI_FabricationTI">
+    <defName>AI_MakeBrainTI</defName>
+    <label>make steel brain casing</label>
+    <description>Make a steel brain casing.</description>
+    <jobString>Making steel brain casing.</jobString>
+
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+
+    <products>
+      <AI_BrainTI>1</AI_BrainTI>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AI_FabricationTI">
+    <defName>AI_MakeLiverTI</defName>
+    <label>make steel liver casing</label>
+    <description>Make a steel liver casing.</description>
+    <jobString>Making steel liver casing.</jobString>
+
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+
+    <products>
+      <AI_LiverTI>1</AI_LiverTI>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AI_FabricationTI">
+    <defName>AI_MakeEyeTI</defName>
+    <label>make steel eye casing</label>
+    <description>Make a steel eye casing.</description>
+    <jobString>Making steel eye casing.</jobString>
+    
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+
+    <products>
+      <AI_EyeTI>1</AI_EyeTI>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AI_FabricationTI">
+    <defName>AI_MakeNoseTI</defName>
+    <label>make steel nose casing</label>
+    <description>Make a steel nose casing.</description>
+    <jobString>Making steel nose casing.</jobString>
+
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+
+    <products>
+      <AI_NoseTI>1</AI_NoseTI>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AI_FabricationTI">
+    <defName>AI_MakeKidneyTI</defName>
+    <label>make steel kidney casing</label>
+    <description>Make a steel kidney casing.</description>
+    <jobString>Making steel kidney casing.</jobString>
+    
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+
+    <products>
+      <AI_KidneyTI>1</AI_KidneyTI>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AI_FabricationTI">
+    <defName>AI_MakeEarTI</defName>
+    <label>make steel ear casing</label>
+    <description>Make a steel ear casing.</description>
+    <jobString>Making steel ear casing.</jobString>
+
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+
+    <products>
+      <AI_EarTI>1</AI_EarTI>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AI_FabricationTI">
+    <defName>AI_MakeStomachTI</defName>
+    <label>make steel stomach casing</label>
+    <description>Make a steel stomach casing.</description>
+    <jobString>Making steel stomach casing.</jobString>
+
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+
+    <products>
+      <AI_StomachTI>1</AI_StomachTI>
+    </products>
+  </RecipeDef>
+
+  <!-- Tier 2 Implants -->
+  <RecipeDef ParentName="AI_FabricationTII">
+    <defName>AI_MakeHeartTII</defName>
+    <label>make plasteel heart casing</label>
+    <description>Make a plasteel heart casing.</description>
+    <jobString>Making plasteel heart casing.</jobString>
+
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Hyperweave</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Plasteel</li>
+        <li>Hyperweave</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+
+    <products>
+      <AI_HeartTII>1</AI_HeartTII>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AI_FabricationTII">
+    <defName>AI_MakeLungTII</defName>
+    <label>make plasteel lung casing</label>
+    <description>Make a plasteel lung casing.</description>
+    <jobString>Making plasteel lung casing.</jobString>
+
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Hyperweave</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Plasteel</li>
+        <li>Hyperweave</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+
+    <products>
+      <AI_LungTII>1</AI_LungTII>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AI_FabricationTII">
+    <defName>AI_MakeBrainTII</defName>
+    <label>make plasteel brain casing</label>
+    <description>Make a plasteel brain casing.</description>
+    <jobString>Making plasteel brain casing.</jobString>
+
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Hyperweave</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Plasteel</li>
+        <li>Hyperweave</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+
+    <products>
+      <AI_BrainTII>1</AI_BrainTII>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AI_FabricationTII">
+    <defName>AI_MakeLiverTII</defName>
+    <label>make plasteel liver casing</label>
+    <description>Make a plasteel liver casing.</description>
+    <jobString>Making plasteel liver casing.</jobString>
+
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Hyperweave</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Plasteel</li>
+        <li>Hyperweave</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+
+    <products>
+      <AI_LiverTII>1</AI_LiverTII>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AI_FabricationTII">
+    <defName>AI_MakeEyeTII</defName>
+    <label>make plasteel eye casing</label>
+    <description>Make a plasteel eye casing.</description>
+    <jobString>Making plasteel eye casing.</jobString>
+
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Hyperweave</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Plasteel</li>
+        <li>Hyperweave</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+
+    <products>
+      <AI_EyeTII>1</AI_EyeTII>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AI_FabricationTII">
+    <defName>AI_MakeNoseTII</defName>
+    <label>make plasteel nose casing</label>
+    <description>Make a plasteel nose casing.</description>
+    <jobString>Making plasteel nose casing.</jobString>
+
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Hyperweave</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Plasteel</li>
+        <li>Hyperweave</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+
+    <products>
+      <AI_NoseTII>1</AI_NoseTII>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AI_FabricationTII">
+    <defName>AI_MakeKidneyTII</defName>
+    <label>make plasteel kidney casing</label>
+    <description>Make a plasteel kidney casing.</description>
+    <jobString>Making plasteel kidney casing.</jobString>
+
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Hyperweave</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Plasteel</li>
+        <li>Hyperweave</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+
+    <products>
+      <AI_KidneyTII>1</AI_KidneyTII>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AI_FabricationTII">
+    <defName>AI_MakeEarTII</defName>
+    <label>make plasteel ear casing</label>
+    <description>Make a plasteel ear casing.</description>
+    <jobString>Making plasteel ear casing.</jobString>
+
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Hyperweave</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Plasteel</li>
+        <li>Hyperweave</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+
+    <products>
+      <AI_EarTII>1</AI_EarTII>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AI_FabricationTII">
+    <defName>AI_MakeStomachTII</defName>
+    <label>make plasteel stomach casing</label>
+    <description>Make a plasteel stomach casing.</description>
+    <jobString>Making plasteel stomach casing.</jobString>
+
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Hyperweave</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Plasteel</li>
+        <li>Hyperweave</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+
+    <products>
+      <AI_StomachTII>1</AI_StomachTII>
+    </products>
+  </RecipeDef>
+
+  <!-- Bionic Parts -->
+  <RecipeDef ParentName="AI_FabricationBionic">
+    <defName>AI_MakeBionicHeart</defName>
+    <label>make advanced bionic heart</label>
+    <description>Make an advanced bionic heart.</description>
+    <jobString>Making advanced bionic heart.</jobString>
+
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AI_HeartTII</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BionicHeart</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AI_HeartTII</li>
+        <li>BionicHeart</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+
+    <products>
+      <AI_BionicHeart>1</AI_BionicHeart>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>AI_MakeBionicLung</defName>
+    <label>make bionic lung</label>
+    <description>Make a bionic lung.</description>
+    <jobString>Making bionic lung.</jobString>
+
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AI_LungTII</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+    </ingredients>
+
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AI_LungTII</li>
+        <li>ComponentSpacer</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+
+    <products>
+      <AI_BionicLung>1</AI_BionicLung>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AI_FabricationBionic">
+    <defName>AI_MakeBionicBrain</defName>
+    <label>make bionic brain</label>
+    <description>Make a bionic brain.</description>
+    <jobString>Making bionic brain.</jobString>
+
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AI_BrainTII</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+    </ingredients>
+
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AI_BrainTII</li>
+        <li>ComponentSpacer</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+
+    <products>
+      <AI_BionicBrain>1</AI_BionicBrain>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AI_FabricationBionic">
+    <defName>AI_MakeBionicLiver</defName>
+    <label>make bionic liver</label>
+    <description>Make a bionic liver.</description>
+    <jobString>Making bionic liver.</jobString>
+
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AI_LiverTII</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+    </ingredients>
+
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AI_LiverTII</li>
+        <li>ComponentSpacer</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+
+    <products>
+      <AI_BionicLiver>1</AI_BionicLiver>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AI_FabricationBionic">
+    <defName>AI_MakeBionicEye</defName>
+    <label>make advanced bionic eye</label>
+    <description>Make an advanced bionic eye.</description>
+    <jobString>Making advanced bionic eye.</jobString>
+
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AI_EyeTII</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BionicEye</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AI_EyeTII</li>
+        <li>BionicEye</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+
+    <products>
+      <AI_BionicEye>1</AI_BionicEye>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AI_FabricationBionic">
+    <defName>AI_MakeBionicNose</defName>
+    <label>make bionic nose</label>
+    <description>Make a bionic nose.</description>
+    <jobString>Making bionic nose.</jobString>
+
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AI_NoseTII</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+    </ingredients>
+
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AI_NoseTII</li>
+        <li>ComponentSpacer</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+
+    <products>
+      <AI_BionicNose>1</AI_BionicNose>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AI_FabricationBionic">
+    <defName>AI_MakeBionicKidney</defName>
+    <label>make bionic kidney</label>
+    <description>Make a bionic kidney.</description>
+    <jobString>Making bionic kidney.</jobString>
+
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AI_NoseTII</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+    </ingredients>
+
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AI_NoseTII</li>
+        <li>ComponentSpacer</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+
+    <products>
+      <AI_BionicKidney>1</AI_BionicKidney>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AI_FabricationBionic">
+    <defName>AI_MakeBionicEar</defName>
+    <label>make advanced bionic ear</label>
+    <description>Make an advanced bionic ear.</description>
+    <jobString>Making advanced bionic ear.</jobString>
+
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AI_EarTII</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BionicEar</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AI_EarTII</li>
+        <li>BionicEar</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+
+    <products>
+      <AI_BionicEar>1</AI_BionicEar>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AI_FabricationBionic">
+    <defName>AI_MakeBionicStomach</defName>
+    <label>make advanced bionic stomach</label>
+    <description>Make an advanced bionic stomach.</description>
+    <jobString>Making advanced bionic stomach.</jobString>
+
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AI_StomachTII</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BionicStomach</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AI_StomachTII</li>
+        <li>BionicStomach</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+
+    <products>
+      <AI_BionicStomach>1</AI_BionicStomach>
+    </products>
+  </RecipeDef>
+</Defs>

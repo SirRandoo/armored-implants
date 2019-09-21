@@ -1,0 +1,1164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+  <!-- Base -->
+  <RecipeDef Name="AI_SurgeryFlesh" Abstract="True">
+    <effectWorking>Surgery</effectWorking>
+    <soundWorking>Recipe_Surgery</soundWorking>
+    <workSpeedStat>MedicalOperationSpeed</workSpeedStat>
+    <workSkill>Medicine</workSkill>
+    <workSkillLearnFactor>16</workSkillLearnFactor>
+    <requiredGiverWorkType>Doctor</requiredGiverWorkType>
+    <conceptLearned>MedicalOperations</conceptLearned>
+
+    <recipeUsers>
+      <li>Human</li>
+    </recipeUsers>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="AI_SurgeryFlesh" Name="AI_SurgeryInstallTI" Abstract="True">
+    <workAmount>3500</workAmount>
+    <deathOnFailedSurgeryChance>0.3</deathOnFailedSurgeryChance>
+    <workerClass>Recipe_InstallImplant</workerClass>
+
+    <skillRequirements>
+      <Medicine>5</Medicine>
+    </skillRequirements>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="AI_SurgeryFlesh" Name="AI_SurgeryInstallTII" Abstract="True">
+    <workAmount>4500</workAmount>
+    <deathOnFailedSurgeryChance>0.7</deathOnFailedSurgeryChance>
+    <workerClass>Recipe_InstallImplant</workerClass>
+    <conceptLearned>MedicalOperations</conceptLearned>
+
+    <skillRequirements>
+      <Medicine>10</Medicine>
+    </skillRequirements>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AI_SurgeryFlesh" Name="AI_SurgeryInstallBionics" Abstract="True">
+    <workAmount>5500</workAmount>
+    <deathOnFailedSurgeryChance>0.10</deathOnFailedSurgeryChance>
+    <workerClass>Recipe_InstallArtificialBodyPart</workerClass>
+    <conceptLearned>MedicalOperations</conceptLearned>
+
+    <skillRequirements>
+      <Medicine>12</Medicine>
+    </skillRequirements>
+  </RecipeDef>
+  
+  <!-- Tier 1 Implants -->
+  <RecipeDef ParentName="AI_SurgeryInstallTI">
+    <defName>AI_InstallHeartTI</defName>
+    <label>install steel heart casing</label>
+    <description>Install a steel heart casing.</description>
+    <jobString>Installing steel heart casing.</jobString>
+
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AI_HeartTI</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>AI_HeartTI</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+
+    <appliedOnFixedBodyParts>
+      <li>Heart</li>
+    </appliedOnFixedBodyParts>
+
+    <addsHediff>AI_HeartTI</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AI_SurgeryInstallTI">
+    <defName>AI_InstallLungTI</defName>
+    <label>install steel lung casing</label>
+    <description>Install a steel lung casing.</description>
+    <jobString>Installing steel lung casing.</jobString>
+
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AI_LungTI</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>AI_LungTI</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+
+    <appliedOnFixedBodyParts>
+      <li>Lung</li>
+    </appliedOnFixedBodyParts>
+
+    <addsHediff>AI_LungTI</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AI_SurgeryInstallTI">
+    <defName>AI_InstallBrainTI</defName>
+    <label>install steel brain casing</label>
+    <description>Install a steel brain casing.</description>
+    <jobString>Installing steel brain casing.</jobString>
+
+    <skillRequirements>
+      <Medicine>7</Medicine>
+    </skillRequirements>
+
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AI_BrainTI</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>AI_BrainTI</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+
+    <addsHediff>AI_BrainTI</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AI_SurgeryInstallTI">
+    <defName>AI_InstallLiverTI</defName>
+    <label>install steel liver casing</label>
+    <description>Install a steel liver casing.</description>
+    <jobString>Installing steel liver casing.</jobString>
+
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AI_LiverTI</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>AI_LiverTI</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+
+    <appliedOnFixedBodyParts>
+      <li>Liver</li>
+    </appliedOnFixedBodyParts>
+
+    <addsHediff>AI_LiverTI</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AI_SurgeryInstallTI">
+    <defName>AI_InstallEyeTI</defName>
+    <label>install steel eye casing</label>
+    <description>Install a steel eye casing.</description>
+    <jobString>Installing steel eye casing.</jobString>
+
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AI_EyeTI</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>AI_EyeTI</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+
+    <appliedOnFixedBodyParts>
+      <li>Eye</li>
+    </appliedOnFixedBodyParts>
+
+    <addsHediff>AI_EyeTI</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AI_SurgeryInstallTI">
+    <defName>AI_InstallNoseTI</defName>
+    <label>install steel nose casing</label>
+    <description>Install a steel nose casing.</description>
+    <jobString>Installing steel nose casing.</jobString>
+
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AI_NoseTI</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>AI_NoseTI</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+
+    <appliedOnFixedBodyParts>
+      <li>Nose</li>
+    </appliedOnFixedBodyParts>
+
+    <addsHediff>AI_NoseTI</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AI_SurgeryInstallTI">
+    <defName>AI_InstallKidneyTI</defName>
+    <label>install steel kidney casing</label>
+    <description>Install a steel kidney casing.</description>
+    <jobString>Installing steel kidney casing.</jobString>
+
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AI_KidneyTI</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>AI_KidneyTI</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+
+    <appliedOnFixedBodyParts>
+      <li>Kidney</li>
+    </appliedOnFixedBodyParts>
+
+    <addsHediff>AI_KidneyTI</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AI_SurgeryInstallTI">
+    <defName>AI_InstallEarTI</defName>
+    <label>install steel ear casing</label>
+    <description>Install a steel ear casing.</description>
+    <jobString>Installing steel ear casing.</jobString>
+
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AI_EarTI</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>AI_EarTI</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+
+    <appliedOnFixedBodyParts>
+      <li>Ear</li>
+    </appliedOnFixedBodyParts>
+
+    <addsHediff>AI_EarTI</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AI_SurgeryInstallTI">
+    <defName>AI_InstallStomachTI</defName>
+    <label>install steel stomach casing</label>
+    <description>Install a steel stomach casing.</description>
+    <jobString>Installing steel stomach casing.</jobString>
+
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AI_StomachTI</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>AI_StomachTI</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+
+    <appliedOnFixedBodyParts>
+      <li>Stomach</li>
+    </appliedOnFixedBodyParts>
+
+    <addsHediff>AI_StomachTI</addsHediff>
+  </RecipeDef>
+
+  <!-- Tier 2 Implants -->
+  <RecipeDef ParentName="AI_SurgeryInstallTII">
+    <defName>AI_InstallHeartTII</defName>
+    <label>install plasteel heart casing</label>
+    <description>Install a plasteel heart casing.</description>
+    <jobString>Installing plasteel heart casing.</jobString>
+
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AI_HeartTII</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>AI_HeartTII</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+
+    <appliedOnFixedBodyParts>
+      <li>Heart</li>
+    </appliedOnFixedBodyParts>
+
+    <addsHediff>AI_HeartTII</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AI_SurgeryInstallTII">
+    <defName>AI_InstallLungTII</defName>
+    <label>install plasteel lung casing</label>
+    <description>Install a plasteel lung casing.</description>
+    <jobString>Installing plasteel lung casing.</jobString>
+
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AI_LungTII</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>AI_LungTII</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+
+    <appliedOnFixedBodyParts>
+      <li>Lung</li>
+    </appliedOnFixedBodyParts>
+
+    <addsHediff>AI_LungTII</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AI_SurgeryInstallTII">
+    <defName>AI_InstallBrainTII</defName>
+    <label>install plasteel brain casing</label>
+    <description>Install a plasteel brain casing.</description>
+    <jobString>Installing plasteel brain casing.</jobString>
+
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AI_BrainTII</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>AI_BrainTII</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+
+    <addsHediff>AI_BrainTII</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AI_SurgeryInstallTII">
+    <defName>AI_InstallLiverTII</defName>
+    <label>install plasteel liver casing</label>
+    <description>Install a plasteel liver casing.</description>
+    <jobString>Installing plasteel liver casing.</jobString>
+
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AI_LiverTII</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>AI_LiverTII</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+
+    <appliedOnFixedBodyParts>
+      <li>Liver</li>
+    </appliedOnFixedBodyParts>
+
+    <addsHediff>AI_LiverTII</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AI_SurgeryInstallTII">
+    <defName>AI_InstallEyeTII</defName>
+    <label>install plasteel eye casing</label>
+    <description>Install a plasteel eye casing.</description>
+    <jobString>Installing plasteel eye casing.</jobString>
+
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AI_EyeTII</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>AI_EyeTII</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+
+    <appliedOnFixedBodyParts>
+      <li>Eye</li>
+    </appliedOnFixedBodyParts>
+
+    <addsHediff>AI_EyeTII</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AI_SurgeryInstallTII">
+    <defName>AI_InstallNoseTII</defName>
+    <label>install plasteel nose casing</label>
+    <description>Install a plasteel nose casing.</description>
+    <jobString>Installing plasteel nose casing.</jobString>
+
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AI_NoseTII</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>AI_NoseTII</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+
+    <appliedOnFixedBodyParts>
+      <li>Nose</li>
+    </appliedOnFixedBodyParts>
+
+    <addsHediff>AI_NoseTII</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AI_SurgeryInstallTII">
+    <defName>AI_InstallKidneyTII</defName>
+    <label>install plasteel kidney casing</label>
+    <description>Install a plasteel kidney casing.</description>
+    <jobString>Installing plasteel kidney casing.</jobString>
+
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AI_KidneyTII</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>AI_KidneyTII</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+
+    <appliedOnFixedBodyParts>
+      <li>Kidney</li>
+    </appliedOnFixedBodyParts>
+
+    <addsHediff>AI_KidneyTII</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AI_SurgeryInstallTII">
+    <defName>AI_InstallEarTII</defName>
+    <label>install plasteel ear casing</label>
+    <description>Install a plasteel ear casing.</description>
+    <jobString>Installing plasteel ear casing.</jobString>
+
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AI_EarTII</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>AI_EarTII</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+
+    <appliedOnFixedBodyParts>
+      <li>Ear</li>
+    </appliedOnFixedBodyParts>
+
+    <addsHediff>AI_EarTII</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AI_SurgeryInstallTII">
+    <defName>AI_InstallStomachTII</defName>
+    <label>install plasteel stomach casing</label>
+    <description>Install a plasteel stomach casing.</description>
+    <jobString>Installing plasteel stomach casing.</jobString>
+
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AI_StomachTII</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>AI_StomachTII</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+
+    <appliedOnFixedBodyParts>
+      <li>Stomach</li>
+    </appliedOnFixedBodyParts>
+
+    <addsHediff>AI_StomachTII</addsHediff>
+  </RecipeDef>
+
+  <!-- Bionic Parts -->
+  <RecipeDef ParentName="AI_SurgeryInstallBionics">
+    <defName>AI_InstallBionicHeart</defName>
+    <label>install advanced bionic heart</label>
+    <description>Install an advanced bionic heart.</description>
+    <jobString>Installing advanced bionic heart.</jobString>
+
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AI_BionicHeart</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>AI_BionicHeart</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+
+    <appliedOnFixedBodyParts>
+      <li>Heart</li>
+    </appliedOnFixedBodyParts>
+
+    <addsHediff>AI_BionicHeart</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AI_SurgeryInstallBionics">
+    <defName>AI_InstallBionicLung</defName>
+    <label>install bionic lung</label>
+    <description>Install a bionic lung.</description>
+    <jobString>Installing bionic lung.</jobString>
+
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AI_BionicLung</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>AI_BionicLung</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+
+    <appliedOnFixedBodyParts>
+      <li>Lung</li>
+    </appliedOnFixedBodyParts>
+
+    <addsHediff>AI_BionicLung</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AI_SurgeryInstallBionics">
+    <defName>AI_InstallBionicBrain</defName>
+    <label>install bionic brain</label>
+    <description>Install a bionic brain.</description>
+    <jobString>Installing bionic brain.</jobString>
+
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AI_BionicBrain</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>AI_BionicBrain</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+
+    <addsHediff>AI_BionicBrain</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AI_SurgeryInstallBionics">
+    <defName>AI_InstallBionicLiver</defName>
+    <label>install bionic liver</label>
+    <description>Install a bionic liver.</description>
+    <jobString>Installing bionic liver.</jobString>
+
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AI_BionicLiver</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>AI_BionicLiver</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+
+    <appliedOnFixedBodyParts>
+      <li>Liver</li>
+    </appliedOnFixedBodyParts>
+
+    <addsHediff>AI_BionicLiver</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AI_SurgeryInstallBionics">
+    <defName>AI_InstallBionicEye</defName>
+    <label>install advanced bionic eye</label>
+    <description>Install an advanced bionic eye.</description>
+    <jobString>Installing advanced bionic eye.</jobString>
+
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AI_BionicEye</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>AI_BionicEye</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+
+    <appliedOnFixedBodyParts>
+      <li>Eye</li>
+    </appliedOnFixedBodyParts>
+
+    <addsHediff>AI_BionicEye</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AI_SurgeryInstallBionics">
+    <defName>AI_InstallBionicNose</defName>
+    <label>install bionic nose</label>
+    <description>Install a bionic nose.</description>
+    <jobString>Installing bionic nose.</jobString>
+
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AI_BionicNose</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>AI_BionicNose</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+
+    <appliedOnFixedBodyParts>
+      <li>Nose</li>
+    </appliedOnFixedBodyParts>
+
+    <addsHediff>AI_BionicNose</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AI_SurgeryInstallBionics">
+    <defName>AI_InstallBionicKidney</defName>
+    <label>install bionic kidney</label>
+    <description>Install a bionic kidney.</description>
+    <jobString>Installing bionic kidney.</jobString>
+
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AI_BionicKidney</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>AI_BionicKidney</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+
+    <appliedOnFixedBodyParts>
+      <li>Kidney</li>
+    </appliedOnFixedBodyParts>
+
+    <addsHediff>AI_BionicKidney</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AI_SurgeryInstallBionics">
+    <defName>AI_InstallBionicEar</defName>
+    <label>install advanced bionic ear</label>
+    <description>Install an advanced bionic ear.</description>
+    <jobString>Installing advanced bionic ear.</jobString>
+
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AI_BionicEar</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>AI_BionicEar</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+
+    <appliedOnFixedBodyParts>
+      <li>Ear</li>
+    </appliedOnFixedBodyParts>
+
+    <addsHediff>AI_BionicEar</addsHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AI_SurgeryInstallBionics">
+    <defName>AI_InstallBionicStomach</defName>
+    <label>install advanced bionic stomach</label>
+    <description>Install an advanced stomach.</description>
+    <jobString>Installing advanced bionic stomach.</jobString>
+
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>Medicine</li>
+          </categories>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AI_BionicStomach</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+      <thingDefs>
+        <li>AI_BionicStomach</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+
+    <appliedOnFixedBodyParts>
+      <li>Stomach</li>
+    </appliedOnFixedBodyParts>
+
+    <addsHediff>AI_BionicStomach</addsHediff>
+  </RecipeDef>
+</Defs>

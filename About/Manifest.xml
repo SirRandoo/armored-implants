@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Manifest>
+  <identifier>ArmoredImplants</identifier>
+  <version>1.1.0.0</version>
+  
+  <suggests>
+    <li>Cyberpunk</li>
+  </suggests>
+
+  <showCrossPromotions>true</showCrossPromotions>
+</Manifest>
