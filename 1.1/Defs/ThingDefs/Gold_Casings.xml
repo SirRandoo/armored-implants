@@ -351,7 +351,7 @@
         </statBases>
     </ThingDef>
 
-    <RecipeDef Parentname="SurgeryInstallImplantBase">
+    <RecipeDef ParentName="SurgeryInstallImplantBase">
         <defName>AIRecipes_InstallGoldStomachCasing</defName>
         <label>install gold stomach casing</label>
         <description>Install a gold stomach casing.</description>
@@ -429,7 +429,7 @@
         </statBases>
     </ThingDef>
 
-    <RecipeDef Parentname="SurgeryInstallImplantBase">
+    <RecipeDef ParentName="SurgeryInstallImplantBase">
         <defName>AIRecipes_InstallGoldEyeCasing</defName>
         <label>install gold eye casing</label>
         <description>Install a gold eye casing.</description>
@@ -507,7 +507,7 @@
         </statBases>
     </ThingDef>
 
-    <RecipeDef Parentname="SurgeryInstallImplantBase">
+    <RecipeDef ParentName="SurgeryInstallImplantBase">
         <defName>AIRecipes_InstallGoldLungCasing</defName>
         <label>install gold lung casing</label>
         <description>Install a gold lung casing.</description>
@@ -585,7 +585,7 @@
         </statBases>
     </ThingDef>
 
-    <RecipeDef Parentname="SurgeryInstallImplantBase">
+    <RecipeDef ParentName="SurgeryInstallImplantBase">
         <defName>AIRecipes_InstallGoldSpineCasing</defName>
         <label>install gold spine casing</label>
         <description>Install a gold spine casing.</description>
@@ -663,7 +663,7 @@
         </statBases>
     </ThingDef>
 
-    <RecipeDef Parentname="SurgeryInstallImplantBase">
+    <RecipeDef ParentName="SurgeryInstallImplantBase">
         <defName>AIRecipes_InstallGoldRibcageCasing</defName>
         <label>install gold ribcage casing</label>
         <description>Install a gold ribcage casing.</description>
@@ -741,7 +741,7 @@
         </statBases>
     </ThingDef>
 
-    <RecipeDef Parentname="SurgeryInstallImplantBase">
+    <RecipeDef ParentName="SurgeryInstallImplantBase">
         <defName>AIRecipes_InstallGoldJawCasing</defName>
         <label>install gold jaw casing</label>
         <description>Install a gold jaw casing.</description>
@@ -819,7 +819,7 @@
         </statBases>
     </ThingDef>
 
-    <RecipeDef Parentname="SurgeryInstallImplantBase">
+    <RecipeDef ParentName="SurgeryInstallImplantBase">
         <defName>AIRecipes_InstallGoldSkullCasing</defName>
         <label>install gold skull casing</label>
         <description>Install a gold skull casing.</description>

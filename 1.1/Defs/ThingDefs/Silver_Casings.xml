@@ -39,7 +39,7 @@
         </statBases>
     </ThingDef>
 
-    <RecipeDef Parentname="SurgeryInstallImplantBase">
+    <RecipeDef ParentName="SurgeryInstallImplantBase">
         <defName>AIRecipes_InstallSilverHeartCasing</defName>
         <label>install silver heart casing</label>
         <description>Install a silver heart casing.</description>
@@ -117,7 +117,7 @@
         </statBases>
     </ThingDef>
 
-    <RecipeDef Parentname="SurgeryInstallImplantBase">
+    <RecipeDef ParentName="SurgeryInstallImplantBase">
         <defName>AIRecipes_InstallSilverBrainCasing</defName>
         <label>install silver brain casing</label>
         <description>Install a silver brain casing.</description>
@@ -195,7 +195,7 @@
         </statBases>
     </ThingDef>
 
-    <RecipeDef Parentname="SurgeryInstallImplantBase">
+    <RecipeDef ParentName="SurgeryInstallImplantBase">
         <defName>AIRecipes_InstallSilverLiverCasing</defName>
         <label>install silver liver casing</label>
         <description>Install a silver liver casing.</description>
@@ -273,7 +273,7 @@
         </statBases>
     </ThingDef>
 
-    <RecipeDef Parentname="SurgeryInstallImplantBase">
+    <RecipeDef ParentName="SurgeryInstallImplantBase">
         <defName>AIRecipes_InstallSilverKidneyCasing</defName>
         <label>install silver kidney casing</label>
         <description>Install a silver kidney casing.</description>
@@ -351,7 +351,7 @@
         </statBases>
     </ThingDef>
 
-    <RecipeDef Parentname="SurgeryInstallImplantBase">
+    <RecipeDef ParentName="SurgeryInstallImplantBase">
         <defName>AIRecipes_InstallSilverStomachCasing</defName>
         <label>install silver stomach casing</label>
         <description>Install a silver stomach casing.</description>
@@ -429,7 +429,7 @@
         </statBases>
     </ThingDef>
 
-    <RecipeDef Parentname="SurgeryInstallImplantBase">
+    <RecipeDef ParentName="SurgeryInstallImplantBase">
         <defName>AIRecipes_InstallSilverEyeCasing</defName>
         <label>install silver eye casing</label>
         <description>Install a silver eye casing.</description>
@@ -507,7 +507,7 @@
         </statBases>
     </ThingDef>
 
-    <RecipeDef Parentname="SurgeryInstallImplantBase">
+    <RecipeDef ParentName="SurgeryInstallImplantBase">
         <defName>AIRecipes_InstallSilverLungCasing</defName>
         <label>install silver lung casing</label>
         <description>Install a silver lung casing.</description>
@@ -585,7 +585,7 @@
         </statBases>
     </ThingDef>
 
-    <RecipeDef Parentname="SurgeryInstallImplantBase">
+    <RecipeDef ParentName="SurgeryInstallImplantBase">
         <defName>AIRecipes_InstallSilverSpineCasing</defName>
         <label>install silver spine casing</label>
         <description>Install a silver spine casing.</description>
@@ -663,7 +663,7 @@
         </statBases>
     </ThingDef>
 
-    <RecipeDef Parentname="SurgeryInstallImplantBase">
+    <RecipeDef ParentName="SurgeryInstallImplantBase">
         <defName>AIRecipes_InstallSilverRibcageCasing</defName>
         <label>install silver ribcage casing</label>
         <description>Install a silver ribcage casing.</description>
@@ -741,7 +741,7 @@
         </statBases>
     </ThingDef>
 
-    <RecipeDef Parentname="SurgeryInstallImplantBase">
+    <RecipeDef ParentName="SurgeryInstallImplantBase">
         <defName>AIRecipes_InstallSilverJawCasing</defName>
         <label>install silver jaw casing</label>
         <description>Install a silver jaw casing.</description>
@@ -819,7 +819,7 @@
         </statBases>
     </ThingDef>
 
-    <RecipeDef Parentname="SurgeryInstallImplantBase">
+    <RecipeDef ParentName="SurgeryInstallImplantBase">
         <defName>AIRecipes_InstallSilverSkullCasing</defName>
         <label>install silver skull casing</label>
         <description>Install a silver skull casing.</description>

@@ -37,7 +37,7 @@
         </statBases>
     </ThingDef>
     
-    <RecipeDef Parentname="SurgeryInstallImplantBase">
+    <RecipeDef ParentName="SurgeryInstallImplantBase">
         <defName>AIRecipes_InstallSteelHeartCasing</defName>
         <label>install steel heart casing</label>
         <description>Install a steel heart casing.</description>
@@ -113,7 +113,7 @@
         </statBases>
     </ThingDef>
     
-    <RecipeDef Parentname="SurgeryInstallImplantBase">
+    <RecipeDef ParentName="SurgeryInstallImplantBase">
         <defName>AIRecipes_InstallSteelBrainCasing</defName>
         <label>install steel brain casing</label>
         <description>Install a steel brain casing.</description>
@@ -189,7 +189,7 @@
         </statBases>
     </ThingDef>
     
-    <RecipeDef Parentname="SurgeryInstallImplantBase">
+    <RecipeDef ParentName="SurgeryInstallImplantBase">
         <defName>AIRecipes_InstallSteelLiverCasing</defName>
         <label>install steel liver casing</label>
         <description>Install a steel liver casing.</description>
@@ -265,7 +265,7 @@
         </statBases>
     </ThingDef>
     
-    <RecipeDef Parentname="SurgeryInstallImplantBase">
+    <RecipeDef ParentName="SurgeryInstallImplantBase">
         <defName>AIRecipes_InstallSteelKidneyCasing</defName>
         <label>install steel kidney casing</label>
         <description>Install a steel kidney casing.</description>
@@ -341,7 +341,7 @@
         </statBases>
     </ThingDef>
     
-    <RecipeDef Parentname="SurgeryInstallImplantBase">
+    <RecipeDef ParentName="SurgeryInstallImplantBase">
         <defName>AIRecipes_InstallSteelStomachCasing</defName>
         <label>install steel stomach casing</label>
         <description>Install a steel stomach casing.</description>
@@ -417,7 +417,7 @@
         </statBases>
     </ThingDef>
     
-    <RecipeDef Parentname="SurgeryInstallImplantBase">
+    <RecipeDef ParentName="SurgeryInstallImplantBase">
         <defName>AIRecipes_InstallSteelEyeCasing</defName>
         <label>install steel eye casing</label>
         <description>Install a steel eye casing.</description>
@@ -493,7 +493,7 @@
         </statBases>
     </ThingDef>
     
-    <RecipeDef Parentname="SurgeryInstallImplantBase">
+    <RecipeDef ParentName="SurgeryInstallImplantBase">
         <defName>AIRecipes_InstallSteelLungCasing</defName>
         <label>install steel lung casing</label>
         <description>Install a steel lung casing.</description>
@@ -569,7 +569,7 @@
         </statBases>
     </ThingDef>
     
-    <RecipeDef Parentname="SurgeryInstallImplantBase">
+    <RecipeDef ParentName="SurgeryInstallImplantBase">
         <defName>AIRecipes_InstallSteelSpineCasing</defName>
         <label>install steel spine casing</label>
         <description>Install a steel spine casing.</description>
@@ -645,7 +645,7 @@
         </statBases>
     </ThingDef>
     
-    <RecipeDef Parentname="SurgeryInstallImplantBase">
+    <RecipeDef ParentName="SurgeryInstallImplantBase">
         <defName>AIRecipes_InstallSteelRibcageCasing</defName>
         <label>install steel ribcage casing</label>
         <description>Install a steel ribcage casing.</description>
@@ -721,7 +721,7 @@
         </statBases>
     </ThingDef>
     
-    <RecipeDef Parentname="SurgeryInstallImplantBase">
+    <RecipeDef ParentName="SurgeryInstallImplantBase">
         <defName>AIRecipes_InstallSteelJawCasing</defName>
         <label>install steel jaw casing</label>
         <description>Install a steel jaw casing.</description>
@@ -797,7 +797,7 @@
         </statBases>
     </ThingDef>
     
-    <RecipeDef Parentname="SurgeryInstallImplantBase">
+    <RecipeDef ParentName="SurgeryInstallImplantBase">
         <defName>AIRecipes_InstallSteelSkullCasing</defName>
         <label>install steel skull casing</label>
         <description>Install a steel skull casing.</description>

@@ -38,7 +38,7 @@
         </costList>
     </ThingDef>
 
-    <RecipeDef Parentname="SurgeryInstallImplantBase">
+    <RecipeDef ParentName="SurgeryInstallImplantBase">
         <defName>AIRecipes_InstallUraniumHeartCasing</defName>
         <label>install uranium heart casing</label>
         <description>Install a uranium heart casing.</description>
@@ -115,7 +115,7 @@
         </statBases>
     </ThingDef>
 
-    <RecipeDef Parentname="SurgeryInstallImplantBase">
+    <RecipeDef ParentName="SurgeryInstallImplantBase">
         <defName>AIRecipes_InstallUraniumBrainCasing</defName>
         <label>install uranium brain casing</label>
         <description>Install a uranium brain casing.</description>
@@ -192,7 +192,7 @@
         </statBases>
     </ThingDef>
 
-    <RecipeDef Parentname="SurgeryInstallImplantBase">
+    <RecipeDef ParentName="SurgeryInstallImplantBase">
         <defName>AIRecipes_InstallUraniumLiverCasing</defName>
         <label>install uranium liver casing</label>
         <description>Install a uranium liver casing.</description>
@@ -269,7 +269,7 @@
         </statBases>
     </ThingDef>
 
-    <RecipeDef Parentname="SurgeryInstallImplantBase">
+    <RecipeDef ParentName="SurgeryInstallImplantBase">
         <defName>AIRecipes_InstallUraniumKidneyCasing</defName>
         <label>install uranium kidney casing</label>
         <description>Install a uranium kidney casing.</description>
@@ -346,7 +346,7 @@
         </statBases>
     </ThingDef>
 
-    <RecipeDef Parentname="SurgeryInstallImplantBase">
+    <RecipeDef ParentName="SurgeryInstallImplantBase">
         <defName>AIRecipes_InstallUraniumStomachCasing</defName>
         <label>install uranium stomach casing</label>
         <description>Install a uranium stomach casing.</description>
@@ -423,7 +423,7 @@
         </statBases>
     </ThingDef>
 
-    <RecipeDef Parentname="SurgeryInstallImplantBase">
+    <RecipeDef ParentName="SurgeryInstallImplantBase">
         <defName>AIRecipes_InstallUraniumEyeCasing</defName>
         <label>install uranium eye casing</label>
         <description>Install a uranium eye casing.</description>
@@ -500,7 +500,7 @@
         </statBases>
     </ThingDef>
 
-    <RecipeDef Parentname="SurgeryInstallImplantBase">
+    <RecipeDef ParentName="SurgeryInstallImplantBase">
         <defName>AIRecipes_InstallUraniumLungCasing</defName>
         <label>install uranium lung casing</label>
         <description>Install a uranium lung casing.</description>
@@ -577,7 +577,7 @@
         </statBases>
     </ThingDef>
 
-    <RecipeDef Parentname="SurgeryInstallImplantBase">
+    <RecipeDef ParentName="SurgeryInstallImplantBase">
         <defName>AIRecipes_InstallUraniumSpineCasing</defName>
         <label>install uranium spine casing</label>
         <description>Install a uranium spine casing.</description>
@@ -654,7 +654,7 @@
         </statBases>
     </ThingDef>
 
-    <RecipeDef Parentname="SurgeryInstallImplantBase">
+    <RecipeDef ParentName="SurgeryInstallImplantBase">
         <defName>AIRecipes_InstallUraniumRibcageCasing</defName>
         <label>install uranium ribcage casing</label>
         <description>Install a uranium ribcage casing.</description>
@@ -731,7 +731,7 @@
         </statBases>
     </ThingDef>
 
-    <RecipeDef Parentname="SurgeryInstallImplantBase">
+    <RecipeDef ParentName="SurgeryInstallImplantBase">
         <defName>AIRecipes_InstallUraniumJawCasing</defName>
         <label>install uranium jaw casing</label>
         <description>Install a uranium jaw casing.</description>
@@ -808,7 +808,7 @@
         </statBases>
     </ThingDef>
 
-    <RecipeDef Parentname="SurgeryInstallImplantBase">
+    <RecipeDef ParentName="SurgeryInstallImplantBase">
         <defName>AIRecipes_InstallUraniumSkullCasing</defName>
         <label>install uranium skull casing</label>
         <description>Install a uranium skull casing.</description>
